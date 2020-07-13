@@ -1,3 +1,16 @@
+## Overview
+
+This project is a parser and evaluator for user-typed OCaml expressions.
+It supports 15 types of expressions including singular data types, binary
+and unary operations, recursion, if-else statements, error handling,
+conditionals, and more. To use it, make sure you have OCaml working on your
+computer, then run make all while CDd in this directory on your terminal. Then
+run ./miniml, and your terminal will prompt you to type your expression. Once
+you hit enter, the evaluator will use either substitution model rules or 
+dynamic model rules to spit out the evaluation of your expression. To switch
+between substitution and dynamic, change line 294 in evaluation.ml to equal eval_s
+(for substitution) or eval_d (for dynamic) and run the build again.
+
 ## MiniML Evaluator Implementation and Extensions
 
 For the final project in CS51, I completed the MiniML evaluator using
